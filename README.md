@@ -100,3 +100,5 @@ IBM, 2023. Real Time Operating systems(RTOS). [Online] Available at: https://www
 *Also added animations
 
 *Added more references 
+
+## PART 3 REFERENCES

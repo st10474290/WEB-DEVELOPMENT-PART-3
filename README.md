@@ -57,11 +57,18 @@ Phase 5: Expansion & Franchising Year 2+ Introduction of signature packaged bast
 
 ## CHANGELOG FROM PART 1 TO PART2 -Consolidated all page styling into one external stylesheet.
 
-Corrected inconsistent file links and navigation labels.
-Added responsive desktop, tablet and mobile layouts.
-Added CSS Grid and Flexbox.
-Improved typography and spacing using relative units and clamp().
-Added hover, focus and active pseudo-classes.
-Improved responsive images and gallery layout.
-Improved contact and enquiry form styling.
-Added responsive mobile navigation.
+-Corrected inconsistent file links and navigation labels.
+
+-Added responsive desktop, tablet and mobile layouts.
+
+-Added CSS Grid and Flexbox.
+
+-Improved typography and spacing using relative units and clamp().
+
+-Added hover, focus and active pseudo-classes.
+
+-Improved responsive images and gallery layout.
+
+-Improved contact and enquiry form styling.
+
+-Added responsive mobile navigation.

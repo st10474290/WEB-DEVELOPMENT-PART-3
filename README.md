@@ -67,6 +67,11 @@ Phase 5: Expansion & Franchising Year 2+ Introduction of signature packaged bast
 
 -Added hover, focus and active pseudo-classes.
 
+## SITEMAP 
+https//www.viaggimondo.it/wp-content/uploads/2024/07/mappa-johannesburg.png
+
+### REFERENCES 
+AI, o., 2025. chatGPT. [Online] Available at: https://chat.openai.com [Accessed 2026]. Android Developers, 2023. appllication fundamentals. [Online] Available at: https://developer.android.com/guide/components/fundamentals [Accessed 18 august 2026]. Android Developers, 2024. [Online] Available at: https://developer.android.com [Accessed 09 2026]. GoogLe, 2023. Google play protect. [Online] Available at: https://support.google.com/android/answer/2812853?hl=en [Accessed 10 August 2026]. IBM, 2023. Real Time Operating systems(RTOS). [Online] Available at: https://www.ibm.com/think/topics/real-time-operating-system [Accessed 8 Aug. 2025] [Accessed sep 2026]. IT Web, 2024. ITWeb. [Online] Available at: https://www.itweb.co.za/article/capitec-uses-bi-ai-to-offer-safer-banking-experience/8OKdWMDXjQBMbznQ [Accessed 2026]..
 -Improved responsive images and gallery layout.
 
 -Improved contact and enquiry form styling.

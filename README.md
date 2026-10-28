@@ -90,3 +90,13 @@ IBM, 2023. Real Time Operating systems(RTOS). [Online] Available at: https://www
 [Accessed sep 2026]. IT Web, 2024. ITWeb. [Online] Available at: https://www.itweb.co.za/article/capitec-uses-bi-ai-to-offer-safer-banking-experience/8OKdWMDXjQBMbznQ.
 
 ## CHANGELOG FROM PART 1 TO PART 3 -Consolidated all page styling into one external stylesheet.
+
+* Pictures can now zoom in compared to the previous part 2
+
+*I have added a calculation of the total food ordered
+
+*I have also included prices for each meal portion
+
+*Also added animations
+
+*Added more references 

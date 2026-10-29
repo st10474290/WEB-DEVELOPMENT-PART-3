@@ -45,13 +45,7 @@ This ZIP is prepared for static hosting, but it has **not** been published to a 
 ## Pricing notice
 The displayed values (Beef Stew R65, Pap & Chakalaka R35, Samp & Beans R45, African Spiced Chicken R75, African Beef R70 and Vetkoek R20) are sample values for assignment demonstration and must be confirmed by the restaurant before the site is public.
 
-## References (consulted for implementation)
-- The Independent Institute of Education (2026) *WEDE5020 Web Development (Introduction): POE Paper and Marking Rubric*, Part 3 instructions, pp. 15–18.
-- MDN Web Docs (n.d.) *Using Fetch*. Available at: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch (Accessed: 27 October 2026).
-- MDN Web Docs (n.d.) *Constraint validation*. Available at: https://developer.mozilla.org/en-US/docs/Web/HTML/Constraint_validation (Accessed: 27 October 2026).
-- Leaflet (n.d.) *Leaflet Quick Start Guide*. Available at: https://leafletjs.com/examples/quick-start/ (Accessed: 27 October 2026).
-- OpenStreetMap contributors (n.d.) *Copyright and attribution*. Available at: https://www.openstreetmap.org/copyright (Accessed: 27 October 2026).
-- FormSubmit (n.d.) *AJAX form submissions*. Available at: https://formsubmit.co/ (Accessed: 27 October 2026).
+## References 
 
 ## AI assistance disclosure reminder
 The assignment brief requires AI tools to be referenced according to the IIE guidelines, including an AI disclosure annexure and screenshots where required. Add your own disclosure and evidence in the format specified by your lecturer. Review, test and understand all code before submission.

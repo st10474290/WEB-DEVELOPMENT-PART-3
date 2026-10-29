@@ -116,3 +116,14 @@ REFERENCES
 -Available at: https://www.ibm.com/think/topics/real-time-operating-system [Accessed 8 Aug. 2025] [Accessed 08 Sep 2026]. IT Web, 2024. ITWeb. 
 
 -[Online] Available at: https://www.itweb.co.za/article/capitec-uses-bi-ai-to-offer-safer-banking-experience/8OKdWMDXjQBMbznQ [08 Sep Accessed 2026].
+
+## Changed References for part 3
+
+Mozilla Developer Network (MDN) (n.d.) JavaScript. Available at: https://developer.mozilla.org/en-US/docs/Web/JavaScript (Accessed: 28 October 2026).
+
+Mozilla Developer Network (MDN) (n.d.) HTML forms. Available at: https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms (Accessed: 28 October 2026).
+
+Google Search Central (n.d.) SEO Starter Guide. Available at: https://developers.google.com/search/docs/fundamentals/seo-starter-guide (Accessed: 28 October 2026).
+
+World Wide Web Consortium (W3C) (n.d.) Web Content Accessibility Guidelines (WCAG) 2.2. Available at: https://www.w3.org/TR/WCAG22/ (Accessed: 28 October 2026).
+

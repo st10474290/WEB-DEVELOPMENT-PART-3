@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Trecia's Grill — Contact
+    </title>
+
+    <link rel="stylesheet"
+          href="CSS/style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <nav class="site-nav">
+
+        <a class="logo"
+           href="homepage.html">
+
+            <img src="images/big.png"
+                 alt="Trecia's Grill logo">
+
+        </a>
+
+
+        <button class="menu-toggle"
+                type="button"
+                aria-label="Toggle navigation"
+                aria-expanded="false">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="homepage.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="aboutus.html">
+                    About Us
+                </a>
+            </li>
+
+            <li>
+                <a href="services.html">
+                    Services
+                </a>
+            </li>
+
+            <li>
+                <a href="gallery.html">
+                    Dishes
+                </a>
+            </li>
+
+            <li>
+                <a href="contactus.html"
+                   class="active">
+                    Contact
+                </a>
+            </li>
+
+            <li>
+                <a href="enquiry.html">
+                    Order
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main>
+
+
+        <!-- =========================
+             CONTACT BANNER
+        ========================== -->
+
+        <section class="banner">
+
+            <p class="eyebrow">
+                Talk to Us
+            </p>
+
+            <h1>
+                Contact Us
+            </h1>
+
+            <p>
+                General enquiries and booking questions.
+            </p>
+
+        </section>
+
+
+
+        <!-- =========================
+             LOCATIONS
+        ========================== -->
+
+        <section class="section two-col">
+
+
+            <!-- PRETORIA -->
+
+            <article class="card">
+
+                <h2>
+                    Pretoria
+                </h2>
+
+                <p>
+                    <strong>Phone:</strong>
+                    +27 82 123 4567
+                </p>
+
+                <p>
+                    <strong>Email:</strong>
+                    info@trecias.co.za
+                </p>
+
+
+                <iframe class="map"
+                        title="Pretoria location"
+                        src="https://www.google.com/maps?q=Pretoria,Gauteng&output=embed"
+                        loading="lazy">
+                </iframe>
+
+            </article>
+
+
+
+            <!-- JOHANNESBURG -->
+
+            <article class="card">
+
+                <h2>
+                    Johannesburg Service Area
+                </h2>
+
+                <p>
+                    123 Trecia Road,
+                    Johannesburg, Gauteng
+                </p>
+
+
+                <iframe class="map"
+                        title="Johannesburg service area"
+                        src="https://www.google.com/maps?q=Johannesburg,Gauteng&output=embed"
+                        loading="lazy">
+                </iframe>
+
+            </article>
+
+
+        </section>
+
+
+
+        <!-- =========================
+             CONTACT FORM
+        ========================== -->
+
+        <section class="section">
+
+            <article class="card form-card">
+
+                <h2>
+                    Send a General Message
+                </h2>
+
+
+                <form action="mailto:info@trecias.co.za"
+                      method="post"
+                      enctype="text/plain">
+
+
+                    <!-- FORM GRID -->
+
+                    <div class="form-grid">
+
+
+                        <!-- FULL NAME -->
+
+                        <div>
+
+                            <label for="cname">
+                                Full Name
+                            </label>
+
+                            <input id="cname"
+                                   name="name"
+                                   required
+                                   minlength="2">
+
+                        </div>
+
+
+
+                        <!-- EMAIL -->
+
+                        <div>
+
+                            <label for="cemail">
+                                Email
+                            </label>
+
+                            <input id="cemail"
+                                   name="email"
+                                   type="email"
+                                   required>
+
+                        </div>
+
+
+
+                        <!-- PHONE -->
+
+                        <div>
+
+                            <label for="cphone">
+                                Phone
+                            </label>
+
+                            <input id="cphone"
+                                   name="phone"
+                                   type="tel"
+                                   pattern="[0-9+ ]{10,16}">
+
+                        </div>
+
+
+
+                        <!-- MESSAGE TYPE -->
+
+                        <div>
+
+                            <label for="ctype">
+                                Message Type
+                            </label>
+
+                            <select id="ctype"
+                                    name="type"
+                                    required>
+
+                                <option value="">
+                                    Select
+                                </option>
+
+                                <option>
+                                    General Enquiry
+                                </option>
+
+                                <option>
+                                    Booking Question
+                                </option>
+
+                                <option>
+                                    Feedback
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- MESSAGE -->
+
+                    <label for="cmsg">
+                        Message
+                    </label>
+
+                    <textarea id="cmsg"
+                              name="message"
+                              rows="6"
+                              minlength="10"
+                              required>
+                    </textarea>
+
+
+
+                    <!-- SUBMIT BUTTON -->
+
+                    <button type="submit">
+                        Prepare Email
+                    </button>
+
+
+                </form>
+
+            </article>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="footer-container">
+
+
+            <!-- QUICK LINKS -->
+
+            <section>
+
+                <h4>
+                    Quick Links
+                </h4>
+
+                <a href="homepage.html">
+                    Home
+                </a>
+
+                <a href="aboutus.html">
+                    About Us
+                </a>
+
+                <a href="services.html">
+                    Services
+                </a>
+
+            </section>
+
+
+
+            <!-- CONTACT -->
+
+            <section>
+
+                <h4>
+                    Contact
+                </h4>
+
+                <p>
+                    Phone: +27 82 123 4567
+                </p>
+
+                <p>
+                    Email: bookings@trecias.co.za
+                </p>
+
+            </section>
+
+
+
+            <!-- BUSINESS INFORMATION -->
+
+            <section>
+
+                <h4>
+                    Trecia's Grill
+                </h4>
+
+                <p>
+                    Pretoria, South Africa
+                </p>
+
+                <p>
+                    Fresh food and warm
+                    African hospitality.
+                </p>
+
+            </section>
+
+
+        </div>
+
+
+
+        <!-- COPYRIGHT -->
+
+        <p class="copyright">
+
+            &copy; 2026 Trecia's Grill.
+
+        </p>
+
+    </footer>
+
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="js/menu.js"></script>
+
+
+</body>
+
+</html>

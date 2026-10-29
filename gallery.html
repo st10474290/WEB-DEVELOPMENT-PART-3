@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Food Gallery | Trecia's Grill Dishes</title>
+    <meta name="description" content="Explore Trecia's Grill dishes and open food photographs in a larger view. Contact us to enquire about menu availability and prices.">
+    <meta name="keywords" content="Trecia's Grill food gallery, South African dishes, African food, restaurant dishes">
+
+    <link rel="stylesheet"
+          href="CSS/style.css">
+
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Trecia's Grill">
+    <meta property="og:title" content="Food Gallery | Trecia's Grill Dishes">
+    <meta property="og:description" content="Explore Trecia's Grill dishes and open food photographs in a larger view. Contact us to enquire about menu availability and prices.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#8b241f">
+</head>
+
+
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+
+    <!-- NAVIGATION -->
+
+    <nav class="site-nav">
+
+        <a class="logo"
+           href="homepage.html">
+
+            <img src="images/big.png"
+                 alt="Trecia's Grill logo">
+
+        </a>
+
+
+        <button class="menu-toggle"
+                type="button"
+                aria-label="Toggle navigation"
+                aria-expanded="false">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="homepage.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="aboutus.html">
+                    About Us
+                </a>
+            </li>
+
+            <li>
+                <a href="services.html">
+                    Services
+                </a>
+            </li>
+
+            <li>
+                <a href="gallery.html"
+                   class="active">
+                    Dishes
+                </a>
+            </li>
+
+            <li>
+                <a href="contactus.html">
+                    Contact
+                </a>
+            </li>
+
+            <li>
+                <a href="enquiry.html">
+                    Order
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+
+    <!-- MAIN CONTENT -->
+
+    <main id="main-content">
+
+
+        <!-- GALLERY BANNER-->
+
+        <section class="banner">
+
+            <p class="eyebrow">
+                From Our Kitchen
+            </p>
+
+            <h1>
+                Our Dishes
+            </h1>
+
+            <p>
+                Browse a selection of Trecia's Grill favourites. Select any dish photo to view it larger.
+            </p>
+
+        </section>
+
+
+
+        <!-- DISH GALLERY-->
+
+        <section class="section">
+            <div class="gallery-tools">
+                <label for="dish-search">Search dishes</label>
+                <input id="dish-search" type="search" placeholder="Type a dish name..." autocomplete="off">
+                <label for="dish-sort">Sort dishes</label>
+                <select id="dish-sort"><option value="default">Original order</option><option value="az">Name A–Z</option><option value="za">Name Z–A</option></select>
+                <p id="dish-search-status" class="form-status" role="status" aria-live="polite">Showing all dishes. Select a photo to zoom in.</p>
+            </div>
+
+            <div class="gallery-grid" id="dish-gallery">
+
+
+                <!-- CHEF'S SPECIAL -->
+
+                <figure>
+
+                    <img src="images/dish-chefs-special.jpg" srcset="images/dish-chefs-special-320w.webp 320w, images/dish-chefs-special-480w.webp 480w, images/dish-chefs-special-800w.webp 800w, images/dish-chefs-special-1200w.webp 1200w" sizes="(max-width: 600px) 92vw, (max-width: 1000px) 45vw, 30vw"
+                         alt="Chef's Special" loading="lazy" decoding="async">
+
+                    <figcaption>
+                        Chef's Special
+                    </figcaption>
+
+                </figure>
+
+
+
+                <!-- MUGODU -->
+
+                <figure>
+
+                    <img src="images/dish-mogodu.jpg" srcset="images/dish-mogodu-320w.webp 320w, images/dish-mogodu-399w.webp 399w" sizes="(max-width: 600px) 92vw, (max-width: 1000px) 45vw, 30vw"
+                         alt="Mogodu, a traditional South African tripe dish" loading="lazy" decoding="async">
+
+                    <figcaption>
+                        Mugodu
+                    </figcaption>
+
+                </figure>
+
+
+
+                <!-- HOUSE PLATE -->
+
+                <figure>
+
+                    <img src="images/dish-house-plate.jpg" srcset="images/dish-house-plate-320w.webp 320w, images/dish-house-plate-480w.webp 480w" sizes="(max-width: 600px) 92vw, (max-width: 1000px) 45vw, 30vw"
+                         alt="House Plate" loading="lazy" decoding="async">
+
+                    <figcaption>
+                        House Plate
+                    </figcaption>
+
+                </figure>
+
+
+
+                <!-- MIXED PLATTER -->
+
+                <figure>
+
+                    <img src="images/dish-mixed-platter.jpeg" srcset="images/dish-mixed-platter-320w.webp 320w, images/dish-mixed-platter-480w.webp 480w, images/dish-mixed-platter-800w.webp 800w" sizes="(max-width: 600px) 92vw, (max-width: 1000px) 45vw, 30vw"
+                         alt="mixed plater" loading="lazy" decoding="async">
+
+                    <figcaption>
+                        Mixed platter
+                    </figcaption>
+
+                </figure>
+
+
+
+                <!-- AFRICAN BEEF -->
+
+                <figure>
+
+                    <img src="images/dish-african-beef.jpg" srcset="images/dish-african-beef-320w.webp 320w, images/dish-african-beef-480w.webp 480w" sizes="(max-width: 600px) 92vw, (max-width: 1000px) 45vw, 30vw"
+                         alt="African Beef" loading="lazy" decoding="async">
+
+                    <figcaption>
+                        African Beef
+                    </figcaption>
+
+                </figure>
+
+
+
+                <!-- PAP & CHAKALAKA -->
+
+                <figure>
+
+                    <img src="images/dish-pap-chakalaka.jpg" srcset="images/dish-pap-chakalaka-320w.webp 320w, images/dish-pap-chakalaka-480w.webp 480w" sizes="(max-width: 600px) 92vw, (max-width: 1000px) 45vw, 30vw"
+                         alt="Pap & Chakalaka" loading="lazy" decoding="async">
+
+                    <figcaption>
+                        Pap & Chakalaka
+                    </figcaption>
+
+                </figure>
+
+
+
+                <!-- SAMP & STEW -->
+
+                <figure>
+
+                    <img src="images/dish-samp-stew.jpg" srcset="images/dish-samp-stew-320w.webp 320w, images/dish-samp-stew-480w.webp 480w" sizes="(max-width: 600px) 92vw, (max-width: 1000px) 45vw, 30vw"
+                         alt="Samp" loading="lazy" decoding="async">
+
+                    <figcaption>
+                        Samp & stew
+                    </figcaption>
+
+                </figure>
+
+
+
+                <!-- VETKOEK -->
+
+                <figure>
+
+                    <img src="images/dish-vetkoek.jpg" srcset="images/dish-vetkoek-320w.webp 320w, images/dish-vetkoek-335w.webp 335w" sizes="(max-width: 600px) 92vw, (max-width: 1000px) 45vw, 30vw"
+                         alt="Vetkoek" loading="lazy" decoding="async">
+
+                    <figcaption>
+                        Vetkoek
+                    </figcaption>
+
+                </figure>
+
+
+
+                <!-- KOTA -->
+
+                <figure>
+
+                    <img src="images/dish-kota.jpg" srcset="images/dish-kota-320w.webp 320w, images/dish-kota-387w.webp 387w" sizes="(max-width: 600px) 92vw, (max-width: 1000px) 45vw, 30vw"
+                         alt="kota" loading="lazy" decoding="async">
+
+                    <figcaption>
+                        kota
+                    </figcaption>
+
+                </figure>
+
+
+
+                <!-- KITCHEN FAVOURITE -->
+
+                <figure>
+
+                    <img src="images/dish-kitchen-favourite.jpeg" srcset="images/dish-kitchen-favourite-320w.webp 320w, images/dish-kitchen-favourite-480w.webp 480w" sizes="(max-width: 600px) 92vw, (max-width: 1000px) 45vw, 30vw"
+                         alt="Kitchen Favourite" loading="lazy" decoding="async">
+
+                    <figcaption>
+                        Kitchen Favourite
+                    </figcaption>
+
+                </figure>
+
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+
+    
+    <section class="share-section" aria-label="Share Trecia's Grill">
+      <p>Know someone who would enjoy our menu?</p>
+      <div class="social-links">
+
+            <!-- Facebook -->
+        ////////////////////////////////////////////////////////////////////////-----------------------////////////////////////    <a href="https://www.facebook.com/YourPage" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+            </a>
+
+            <!-- X (Twitter) -->
+            <a href="https://x.com/RanganiRNR?t=ayu9RnvL8N2Vy5HoBfgoDQ&s=09" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968830.png" alt="X (Twitter)">
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/rangani_rr?igsh=MXIzbWZ3aWltNGcydg==" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+            </a>
+
+            <!-- Email -->
+            <a href="mailto:brampamba@email.com">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+            </a>
+            <!-- WhatsApp -->
+            <a href="https://wa.me/0681854594" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+            </a>////////////////////////////////////////////////////////////////////////////////////////////////////////
+        </div>
+    </section>
+
+<footer>
+
+        <div class="footer-container">
+
+
+            <!-- QUICK LINKS -->
+
+            <section>
+
+                <h4>
+                    Quick Links
+                </h4>
+
+                <a href="homepage.html">
+                    Home
+                </a>
+
+                <a href="aboutus.html">
+                    About Us
+                </a>
+
+                <a href="services.html">
+                    Services
+                </a>
+
+            </section>
+
+
+
+            <!-- CONTACT -->
+
+            <section>
+
+                <h4>
+                    Contact
+                </h4>
+
+                <p>
+                    Phone: +27 82 123 4567
+                </p>
+
+                <p>
+                    Email: bookings@trecias.co.za
+                </p>
+
+            </section>
+
+
+
+            <!-- BUSINESS INFORMATION -->
+
+            <section>
+
+                <h4>
+                    Trecia's Grill
+                </h4>
+
+                <p>
+                    Pretoria, South Africa
+                </p>
+
+                <p>
+                    Fresh food and warm
+                    African hospitality.
+                </p>
+
+            </section>
+
+
+        </div>
+
+
+
+        <!-- COPYRIGHT -->
+
+        <p class="copyright">
+
+            &copy; 2026 Trecia's Grill.
+
+        </p>
+
+    </footer>
+
+
+
+    <!-- JAVASCRIPT-->
+
+    <script src="js/menu.js"></script>
+
+
+</body>
+
+</html>

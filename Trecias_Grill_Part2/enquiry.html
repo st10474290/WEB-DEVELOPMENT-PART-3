@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trecia's Grill — Enquiry</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <nav class="site-nav">
+    <a class="logo" href="homepage.html">
+        <img src="images/big.png" alt="Trecia's Grill logo"></a>
+    <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false"><span></span><span>
+             </span><span></span></button>
+    <ul class="nav-links">
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Dishes</a></li>
+        <li><a href="contactus.html">Contact</a></li>
+        <li><a href="enquiry.html" class="active">Order</a></li>
+     </ul></nav><main>
+    <section class="banner">
+    <p class="eyebrow">Order or Tasting</p>
+    <h1>Place an Order or Book a Tasting</h1>
+    <p>Complete the form below.</p>
+        </section>
+    <section class="section">
+    <article class="card form-card">
+        <form action="#" method="post" enctype="multipart/form-data">
+        <h2>Customer Details</h2>
+        <div class="form-grid">
+            <div><label for="name">Full Name</label><input id="name" name="name" required minlength="2"></div>
+            <div><label for="email">Email</label><input id="email" name="email" type="email" required></div>
+            <div><label for="phone">Phone</label><input id="phone" name="phone" type="tel" pattern="[0-9+ ]{10,16}" required></div>
+            <div><label for="service">Request Type</label><select id="service" name="service" required><option value="">Select</option><option>Book a Food Tasting</option><option>Order Food</option>
+                <option>Book Tasting & Order Food</option>
+                  </select>
+                </div>
+            </div>
+        <h2>Booking Details</h2>
+        <div class="form-grid">
+            <div><label for="date">Date</label><input id="date" name="date" type="date"></div>
+            <div><label for="time">Time</label><input id="time" name="time" type="time"></div>
+            <div><label for="guests">Guests</label><input id="guests" name="guests" type="number" min="1" max="500"></div>
+            <div><label for="event">Event</label><select id="event" name="event"><option value="">Select</option>
+                <option>Wedding</option>
+                <option>Corporate Event</option>
+                <option>Birthday Party</option>
+                <option>Private Function</option>
+                 </select>
+                </div></div><h2>Food Menu</h2>
+        <div class="food-grid">
+            <article class="food-item">
+            <img src="images/rs9.jpg" alt="Beef Stew">
+            <div><h3>Beef Stew</h3>
+                <label for="q1">Quantity</label>
+                <select id="q1" name="q1">
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>10</option>
+                    </select>
+                </div>
+                </article>
+            <article class="food-item">
+            <img src="images/rs10.jpg" alt="Pap & Chakalaka"><div>
+                <h3>Pap & Chakalaka</h3>
+                <label for="q2">Quantity</label>
+                <select id="q2" name="q2">
+               <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>10</option>
+                    </select>
+                    </div>
+                </article>
+            <article class="food-item"><img src="images/rs12.jpg" alt="Samp & Beans"><div><h3>Samp & Beans</h3>
+                <label for="q3">Quantity</label>
+                <select id="q3" name="q3">
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>10</option>
+                    </select>
+                     </div>
+                </article>
+            <article class="food-item"><img src="images/rs3.jpg" alt="African Spiced Chicken">
+            <div><h3>African Spiced Chicken</h3><label for="q4">Quantity</label>
+                <select id="q4" name="q4">
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>10</option>
+                    </select>
+                </div>
+                </article>
+            <article class="food-item"><img src="images/rs1.jpg" alt="African Beef">
+            <div><h3>African Beef</h3>
+                <label for="q5">Quantity</label>
+                <select id="q5" name="q5">
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>10</option>
+                    </select>
+                </div>
+                </article>
+            <article class="food-item"><img src="images/rs13.jpg" alt="Vetkoek"><div><h3>Vetkoek</h3><label for="q6">Quantity</label>
+                <select id="q6" name="q6"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>10</option>
+                    </select>
+                   </div>
+                </article>
+            </div>
+        <div class="form-grid">
+            <div><label for="diet">Dietary Requirements</label>
+            <select id="diet" name="diet"><option>None</option><option>Vegetarian</option><option>Vegan</option>
+                <option>Halal</option><option>Food Allergies</option></select></div><div><label for="photo">Reference Photo</label><input id="photo" name="photo" type="file" accept="image/*"></div></div><label for="message">Additional Details</label><textarea id="message" name="message" rows="5"></textarea><button type="submit">Submit Request</button></form></article></section>
+         </main>
+    <footer><div class="footer-container">
+    <section>
+        <h4>Quick Links</h4><a href="homepage.html">Home</a><a href="aboutus.html">About Us</a><a href="services.html">Services</a>
+        </section>
+    <section><h4>Contact</h4><p>Phone: +27 82 123 4567</p><p>Email: bookings@trecias.co.za</p>
+        </section>
+    <section><h4>Trecia's Grill</h4><p>Pretoria, South Africa</p><p>Fresh food and warm African hospitality.</p>
+        </section>
+             </div><p class="copyright">&copy; 2026 Trecia's Grill.</p>
+             </footer><script src="js/menu.js">
+                </script></body></html>

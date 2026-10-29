@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trecias Grill — </title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="images/big.png" alt="Logo">
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul>
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contactus.html">Contact</a></li>
+      <li><a href="enquiry.html" class="active">Order</a></li>
+    </ul>
+  </nav>
+
+  <div class="content-box large-box">
+    <h1>order</h1>
+    <p>Trecias Grill • Pretoria, South Africa</p>
+  </div>
+
+  <div class="content-box">
+      <h2>order or Book a Tasting</h2>
+    
+      <form action="#" method="post" enctype="multipart/form-data">
+
+          <!-- ================================
+             CUSTOMER DETAILS
+        ================================= -->
+
+          <h2>Book a Testing or Order Food</h2>
+
+          <label for="name">Full Name:</label>
+          <input id="name" name="name" type="text" required>
+
+          <label for="email">Email Address:</label>
+          <input id="email" name="email" type="email" required>
+
+          <label for="phone">Phone Number:</label>
+          <input id="phone" name="phone" type="tel" required>
+
+
+          <!-- ================================
+             CHOOSE SERVICE
+        ================================= -->
+
+          <h3>What Would You Like To Do?</h3>
+
+          <label for="service">Select an Option:</label>
+
+          <select id="service" name="service" required>
+              <option value="">-- Select an Option --</option>
+              <option value="testing">Book a Food Testing</option>
+              <option value="food-order">Order Food</option>
+              <option value="testing-food">Book Testing &amp; Order Food</option>
+          </select>
+
+
+          <!-- ================================
+             TESTING / BOOKING DETAILS
+        ================================= -->
+
+          <div class="booking-section">
+
+              <h3>Food Testing / Booking</h3>
+
+              <label for="testing-date">Testing Date:</label>
+              <input id="testing-date"
+                     name="testing_date"
+                     type="date">
+
+              <label for="testing-time">Testing Time:</label>
+              <input id="testing-time"
+                     name="testing_time"
+                     type="time">
+
+              <label for="guests">Number of People:</label>
+              <input id="guests"
+                     name="guests"
+                     type="number"
+                     min="1"
+                     placeholder="e.g. 4">
+
+              <label for="event">Type of Event:</label>
+
+              <select id="event" name="event">
+                  <option value="">-- Select Event --</option>
+                  <option value="wedding">Wedding</option>
+                  <option value="corporate">Corporate Event</option>
+                  <option value="birthday">Birthday Party</option>
+                  <option value="festival">Festival</option>
+                  <option value="private">Private Function</option>
+                  <option value="other">Other</option>
+              </select>
+
+          </div>
+
+
+          <!-- ================================
+             AFRICAN FOOD MENU
+        ================================= -->
+
+          <div class="food-section">
+
+              <h3>African Food Menu</h3>
+
+              <p>
+                  Select the food you would like to order and enter the quantity.
+              </p>
+
+
+              <!-- Beef stew -->
+
+              <div class="food-item">
+
+                  <img src="images/rs9.jpg"
+                       alt="Jollof Rice">
+
+                  <div class="food-info">
+
+                      <h4>Beef stew</h4>
+
+                      <p>
+                          Traditional African rice cooked with tomatoes,
+                          peppers and spices.
+                      </p>
+
+                      <label for="jollof">Quantity:</label>
+
+                      <select id="jollof" name="jollof">
+                          <option value="0">0</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="10">10</option>
+                      </select>
+
+                  </div>
+
+              </div>
+
+
+              <!-- PAP AND CHAKALAKA -->
+
+              <div class="food-item">
+
+                  <img src="images/rs10.jpg"
+                       alt="Pap and Chakalaka">
+
+                  <div class="food-info">
+
+                      <h4>Pap &amp; Chakalaka</h4>
+
+                      <p>
+                          Traditional South African pap served with spicy
+                          chakalaka vegetables.
+                      </p>
+
+                      <label for="pap">Quantity:</label>
+
+                      <select id="pap" name="pap">
+                          <option value="0">0</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="10">10</option>
+                      </select>
+
+                  </div>
+
+              </div>
+
+
+              <!-- SAMP AND BEANS -->
+
+              <div class="food-item">
+
+                  <img src="images/rs12.jpg"
+                       alt="Samp and Beans">
+
+                  <div class="food-info">
+
+                      <h4>Samp &amp; Beans</h4>
+
+                      <p>
+                          A traditional South African dish made with samp
+                          and beans.
+                      </p>
+
+                      <label for="samp">Quantity:</label>
+
+                      <select id="samp" name="samp">
+                          <option value="0">0</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="10">10</option>
+                      </select>
+
+                  </div>
+
+              </div>
+
+
+              <!-- AFRICAN SPICED CHICKEN -->
+
+              <div class="food-item">
+
+                  <img src="images/rs3.jpg"
+                       alt="African Spiced Chicken">
+
+                  <div class="food-info">
+
+                      <h4>African Spiced Chicken</h4>
+
+                      <p>
+                          Chicken prepared with traditional African spices
+                          and herbs.
+                      </p>
+
+                      <label for="chicken">Quantity:</label>
+
+                      <select id="chicken" name="chicken">
+                          <option value="0">0</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="10">10</option>
+                      </select>
+
+                  </div>
+
+              </div>
+
+
+              <!-- BEEF STEW -->
+
+              <div class="food-item">
+
+                  <img src="images/rs1.jpg"
+                       alt="African Beef Stew">
+
+                  <div class="food-info">
+
+                      <h4>African Beef </h4>
+
+                      <p>
+                          Slow-cooked beef with vegetables and traditional
+                          African spices.
+                      </p>
+
+                      <label for="beef">Quantity:</label>
+
+                      <select id="beef" name="beef">
+                          <option value="0">0</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="10">10</option>
+                      </select>
+
+                  </div>
+
+              </div>
+
+
+              <!-- VETKOEK -->
+
+              <div class="food-item">
+
+                  <img src="images/rs13.jpg"
+                       alt="Vetkoek">
+
+                  <div class="food-info">
+
+                      <h4>Vetkoek</h4>
+
+                      <p>
+                          Traditional South African fried dough served with
+                          a choice of filling.
+                      </p>
+
+                      <label for="vetkoek">Quantity:</label>
+
+                      <select id="vetkoek" name="vetkoek">
+                          <option value="0">0</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="10">10</option>
+                      </select>
+
+                  </div>
+
+              </div>
+
+          </div>
+
+
+          <!-- ================================
+             DIETARY REQUIREMENTS
+        ================================= -->
+
+          <h3>Dietary Requirements</h3>
+
+          <label for="diet">Dietary Requirements:</label>
+
+          <select id="diet" name="diet">
+              <option value="">-- Select --</option>
+              <option value="none">No Special Requirements</option>
+              <option value="vegetarian">Vegetarian</option>
+              <option value="vegan">Vegan</option>
+              <option value="halal">Halal</option>
+              <option value="allergies">Food Allergies</option>
+          </select>
+
+
+          <!-- ================================
+             ADDITIONAL INFORMATION
+        ================================= -->
+
+          <label for="message">Additional Details:</label>
+
+          <textarea id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Enter any special requests, allergies or additional information..."></textarea>
+
+
+          <!-- ================================
+             OPTIONAL CUSTOMER PHOTO
+        ================================= -->
+
+          <label for="photo">Upload a Reference Photo (Optional):</label>
+
+          <input id="photo"
+                 name="photo"
+                 type="file"
+                 accept="image/*">
+
+
+          <!-- ================================
+             SUBMIT
+        ================================= -->
+
+          <button type="submit">
+              Book Testing / Place Food Order
+          </button>
+
+      </form>
+      
+
+  </div>
+
+  <div class="content-box large-box cta-box">
+    <span>Planning an event?</span>
+    <a href="enquiry.html">Book a tasting or request a quote</a>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <a href="homepage.html">Home</a><br/>
+        <a href="aboutus.html">About Us</a><br/>
+        <a href="services.html">Services</a>
+      </div>
+      <div class="footer-section">
+        <h4>Contact Info</h4>
+        <p>WhatsApp: +27 00 000 0000</p>
+        <p>Email: bookings@Trecias.co.za</p>
+      </div>
+      <div class="footer-section">
+        <h4>Founder</h4>
+        <p>Chef Trecia</p>
+        <p>Pretoria, South Africa</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector("nav ul").classList.toggle("showing");
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Prices & Order Estimate | Trecia's Grill</title>
+    <meta name="description" content="Browse Trecia's Grill menu prices, select meal quantities and calculate an estimated food order total before sending an enquiry.">
+    <meta name="keywords" content="Trecia's Grill menu, food prices Pretoria, meal estimate calculator, food orders, catering enquiry">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Trecia's Grill">
+    <meta property="og:title" content="Menu Prices & Order Estimate | Trecia's Grill">
+    <meta property="og:description" content="Browse Trecia's Grill menu prices, select meal quantities and calculate an estimated food order total before sending an enquiry.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#8b241f">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <nav class="site-nav">
+    <a class="logo" href="homepage.html">
+        <img src="images/big.png" alt="Trecia's Grill logo"></a>
+    <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false"><span></span><span>
+             </span><span></span></button>
+    <ul class="nav-links">
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Dishes</a></li>
+        <li><a href="contactus.html">Contact</a></li>
+        <li><a href="enquiry.html" class="active">Order</a></li>
+     </ul></nav><main id="main-content">
+    <section class="banner">
+    <p class="eyebrow">Order or Tasting</p>
+    <h1>Place an Order or Book a Tasting</h1>
+    <p>Complete the form below.</p>
+        </section>
+    <section class="section">
+    <article class="card form-card">
+        <form id="enquiry-form" action="https://formsubmit.co/ajax/bookings@trecias.co.za" method="post">
+        <input type="hidden" name="_subject" value="Trecia's Grill order or catering enquiry">
+        <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <h2>Customer Details</h2>
+        <div class="form-grid">
+            <div><label for="name">Full Name</label><input id="name" name="name" required minlength="2"></div>
+            <div><label for="email">Email</label><input id="email" name="email" type="email" required></div>
+            <div><label for="phone">Phone</label><input id="phone" name="phone" type="tel" pattern="[0-9+ ]{10,16}" required></div>
+            <div><label for="service">Request Type</label><select id="service" name="service" required><option value="">Select</option><option>Book a Food Tasting</option><option>Order Food</option>
+                <option>Book Tasting & Order Food</option>
+                  </select>
+                </div>
+            </div>
+        <h2>Booking Details</h2>
+        <div class="form-grid">
+            <div><label for="date">Date</label><input id="date" name="date" type="date"></div>
+            <div><label for="time">Time</label><input id="time" name="time" type="time"></div>
+            <div><label for="guests">Guests</label><input id="guests" name="guests" type="number" min="1" max="500"></div>
+            <div><label for="event">Event</label><select id="event" name="event"><option value="">Select</option>
+                <option>Wedding</option>
+                <option>Corporate Event</option>
+                <option>Birthday Party</option>
+                <option>Private Function</option>
+                 </select>
+                </div></div><h2>Food Menu</h2>
+     
+        <div class="food-grid">
+            <article class="food-item">
+            <img src="images/dish-beef-stew.jpg" srcset="images/dish-beef-stew-320w.webp 320w, images/dish-beef-stew-447w.webp 447w" sizes="(max-width: 600px) 92vw, (max-width: 1000px) 45vw, 30vw" alt="Beef Stew" loading="lazy" decoding="async">
+            <div><h3>Beef Stew</h3>
+                <p class="food-price">R65.00 per portion</p>
+                <label for="q1">Quantity</label>
+                <select id="q1" name="q1" class="quantity-select" data-price="65" aria-label="Quantity of Beef Stew"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="10">10</option></select>
+                </div>
+                </article>
+            <article class="food-item">
+            <img src="images/dish-pap-chakalaka.jpg" srcset="images/dish-pap-chakalaka-320w.webp 320w, images/dish-pap-chakalaka-480w.webp 480w" sizes="(max-width: 600px) 92vw, (max-width: 1000px) 45vw, 30vw" alt="Pap & Chakalaka" loading="lazy" decoding="async"><div>
+                <h3>Pap & Chakalaka</h3>
+                <p class="food-price">R35.00 per portion</p>
+                <label for="q2">Quantity</label>
+                <select id="q2" name="q2" class="quantity-select" data-price="35" aria-label="Quantity of Pap & Chakalaka"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="10">10</option></select>
+                    </div>
+                </article>
+            <article class="food-item"><img src="images/dish-samp-stew.jpg" srcset="images/dish-samp-stew-320w.webp 320w, images/dish-samp-stew-480w.webp 480w" sizes="(max-width: 600px) 92vw, (max-width: 1000px) 45vw, 30vw" alt="Samp & Beans" loading="lazy" decoding="async"><div><h3>Samp & Beans</h3>
+                <p class="food-price">R45.00 per portion</p>
+                <label for="q3">Quantity</label>
+                <select id="q3" name="q3" class="quantity-select" data-price="45" aria-label="Quantity of Samp & Beans"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="10">10</option></select>
+                     </div>
+                </article>
+            <article class="food-item"><img src="images/dish-african-spiced-chicken.jpg" srcset="images/dish-african-spiced-chicken-320w.webp 320w, images/dish-african-spiced-chicken-480w.webp 480w, images/dish-african-spiced-chicken-800w.webp 800w, images/dish-african-spiced-chicken-1200w.webp 1200w" sizes="(max-width: 600px) 92vw, (max-width: 1000px) 45vw, 30vw" alt="African Spiced Chicken" loading="lazy" decoding="async">
+            <div><h3>African Spiced Chicken</h3>
+                <p class="food-price">R75.00 per portion</p><label for="q4">Quantity</label>
+                <select id="q4" name="q4" class="quantity-select" data-price="75" aria-label="Quantity of African Spiced Chicken"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="10">10</option></select>
+                </div>
+                </article>
+            <article class="food-item"><img src="images/dish-african-beef.jpg" srcset="images/dish-african-beef-320w.webp 320w, images/dish-african-beef-480w.webp 480w" sizes="(max-width: 600px) 92vw, (max-width: 1000px) 45vw, 30vw" alt="African Beef" loading="lazy" decoding="async">
+            <div><h3>African Beef</h3>
+                <p class="food-price">R70.00 per portion</p>
+                <label for="q5">Quantity</label>
+                <select id="q5" name="q5" class="quantity-select" data-price="70" aria-label="Quantity of African Beef"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="10">10</option></select>
+                </div>
+                </article>
+            <article class="food-item"><img src="images/dish-vetkoek.jpg" srcset="images/dish-vetkoek-320w.webp 320w, images/dish-vetkoek-335w.webp 335w" sizes="(max-width: 600px) 92vw, (max-width: 1000px) 45vw, 30vw" alt="Vetkoek" loading="lazy" decoding="async"><div><h3>Vetkoek</h3>
+                <p class="food-price">R20.00 per portion</p><label for="q6">Quantity</label>
+                <select id="q6" name="q6" class="quantity-select" data-price="20" aria-label="Quantity of Vetkoek"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="10">10</option></select>
+                   </div>
+                </article>
+            </div>
+        <!-- Live order estimate: calculated locally in the browser -->
+        <section class="estimate-panel" aria-labelledby="estimate-title">
+            <h2 id="estimate-title">Order Estimate Calculator</h2>
+            <p>Choose quantities above. Your estimate updates automatically and is not a final quote.</p>
+            <dl class="estimate-breakdown">
+                <div><dt>Selected portions</dt><dd id="estimate-quantity">0</dd></div>
+                <div><dt>Estimated total</dt><dd id="estimate-total">R0.00</dd></div>
+            </dl>
+            <p class="estimate-note">Prices are sample estimates and should be confirmed with Trecia's Grill before ordering. Catering, delivery and special requests may cost extra.</p>
+            <p id="estimate-status" class="form-status" role="status" aria-live="polite">Select menu quantities to calculate your estimate.</p>
+        </section>
+        <div class="form-grid">
+            <div><label for="diet">Dietary Requirements</label>
+            <select id="diet" name="diet"><option>None</option><option>Vegetarian</option><option>Vegan</option>
+                <option>Halal</option><option>Food Allergies</option></select></div><div class="field-note"><p>For reference photos, please reply to the confirmation email after the enquiry is received.</p></div></div><label for="message">Additional Details</label><textarea id="message" name="message" rows="5"></textarea><button type="submit" class="submit-button">Send Order Enquiry</button>
+        <p class="form-status" id="enquiry-status" role="status" aria-live="polite">Your estimate is calculated in your browser. Submit the form to send your enquiry.</p></form></article></section>
+         </main>
+    
+    <section class="share-section" aria-label="Share Trecia's Grill">
+      <p>Know someone who would enjoy our menu?</p>
+      <div class="social-links">
+
+            <!-- Facebook -->
+        ////////////////////////////////////////////////////////////////////////-----------------------////////////////////////    <a href="https://www.facebook.com/YourPage" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+            </a>
+
+            <!-- X (Twitter) -->
+            <a href="https://x.com/RanganiRNR?t=ayu9RnvL8N2Vy5HoBfgoDQ&s=09" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968830.png" alt="X (Twitter)">
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/rangani_rr?igsh=MXIzbWZ3aWltNGcydg==" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+            </a>
+
+            <!-- Email -->
+            <a href="mailto:brampamba@email.com">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+            </a>
+            <!-- WhatsApp -->
+            <a href="https://wa.me/0681854594" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+            </a>////////////////////////////////////////////////////////////////////////////////////////////////////////
+        </div>
+    </section>
+
+<footer><div class="footer-container">
+    <section>
+        <h4>Quick Links</h4><a href="homepage.html">Home</a><a href="aboutus.html">About Us</a><a href="services.html">Services</a>
+        </section>
+    <section><h4>Contact</h4><p>Phone: +27 82 123 4567</p><p>Email: bookings@trecias.co.za</p>
+        </section>
+    <section><h4>Trecia's Grill</h4><p>Pretoria, South Africa</p><p>Fresh food and warm African hospitality.</p>
+        </section>
+             </div><p class="copyright">&copy; 2026 Trecia's Grill.</p>
+             </footer><script src="js/menu.js">
+                </script></body></html>

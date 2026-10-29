@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TRECIA’S GRILL  — Services</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="images/big.png" alt="Logo">
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul>
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="services.html" class="active">Services</a></li>
+      <li><a href="gallery.html">Dishes</a></li>
+      <li><a href="contactus.html">Contact</a></li>
+      <li><a href="enquiry.html">Order</a></li>
+    </ul>
+  </nav>
+
+  <div class="content-box large-box">
+    <h1>Services</h1>
+    <p>TRECIA’S GRILL  • Pretoria, South Africa</p>
+  </div>
+
+  <div class="content-box">
+      <h2>Dining in or </h2>
+    <h2>Catering Packages</h2>
+    <ul>
+      <li>Weddings – Elegant menus tailored to your special day.</li>
+      <li>Corporate Events – Professional catering for meetings, launches, and conferences.</li>
+      <li>Birthday Parties</li>
+      <li>Festivals & Private Functions – Large-scale catering with flawless service.</li>
+    </ul>
+  </div>
+
+  <div class="content-box">
+    <h2>Special Menus</h2>
+    <p>We provide options for:</p>
+    <ul>
+      <li>Vegan and Vegetarian</li>
+      <li>Gluten-Free</li>
+      <li>Halal</li>
+    </ul>
+  </div>
+
+  <div class="content-box large-box cta-box">
+    <span>Planning an event?</span>
+    <a href="enquiry.html">Book a tasting</a>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <a href="homepage.html">Home</a><br/>
+        <a href="aboutus.html">About Us</a><br/>
+        <a href="services.html">Services</a>
+      </div>
+      <div class="footer-section">
+        <h4>Contact Info</h4>
+        <p>WhatsApp: +27 00 000 0000</p>
+        <p>Email: bookings@TRECIA’S GRILL .co.za</p>
+      </div>
+      <div class="footer-section">
+        <h4>Founder</h4>
+        <p>Qana Lathalo</p>
+        <p>Pretoria, South Africa</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector("nav ul").classList.toggle("showing");
+    }
+  </script>
+</body>
+</html>

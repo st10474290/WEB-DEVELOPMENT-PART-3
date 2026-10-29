@@ -1,0 +1,605 @@
+:root {
+	--bg: #171418;
+	--surface: #fff8e7;
+	--card: #fff;
+	--text: #2c2629;
+	--muted: #6e6267;
+	--brand: #6f1737;
+	--brand-dark: #4f0f27;
+	--accent: #d4af37;
+	--border: #e3d8c6;
+	--shadow: 0 .75rem 1.75rem rgba(0, 0, 0, .12);
+	--radius: 1rem;
+	--max: 72rem;
+}
+
+
+/* =========================
+   GENERAL RESET
+========================= */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+html {
+	scroll-behavior: smooth;
+}
+
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+	line-height: 1.65;
+	background: var(--bg);
+	color: var(--text);
+}
+
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+
+a {
+	color: inherit;
+}
+
+
+button,
+input,
+select,
+textarea {
+	font: inherit;
+}
+
+
+/* =========================
+   HEADINGS
+========================= */
+
+h1,
+h2,
+h3,
+h4 {
+	line-height: 1.2;
+	letter-spacing: .01em;
+}
+
+
+h1 {
+	font-size: clamp(2.2rem, 6vw, 4.5rem);
+}
+
+
+h2 {
+	font-size: clamp(1.6rem, 3vw, 2.5rem);
+}
+
+
+h3 {
+	font-size: clamp(1.2rem, 2vw, 1.6rem);
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.site-nav {
+	width: 100%;
+	min-height: 5.5rem;
+	padding: .75rem clamp(1rem, 4vw, 3rem);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 2rem;
+	background: var(--surface);
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+	box-shadow: 0 .25rem 1rem rgba(0, 0, 0, .1);
+}
+
+
+.logo img {
+	width: clamp(5rem, 10vw, 7.5rem);
+	max-height: 4.25rem;
+	object-fit: contain;
+}
+
+
+.nav-links {
+	list-style: none;
+	display: flex;
+	gap: .4rem;
+	align-items: center;
+}
+
+
+	.nav-links a {
+		display: block;
+		padding: .65rem .9rem;
+		text-decoration: none;
+		border-radius: .5rem;
+		font-weight: 700;
+		transition: .2s;
+	}
+
+
+		.nav-links a:hover,
+		.nav-links a:focus-visible,
+		.nav-links a.active {
+			background: var(--accent);
+			color: #fff;
+		}
+
+
+/* =========================
+   MOBILE MENU
+========================= */
+
+.menu-toggle {
+	display: none;
+	border: 0;
+	background: transparent;
+	cursor: pointer;
+}
+
+
+	.menu-toggle span {
+		display: block;
+		width: 1.75rem;
+		height: .18rem;
+		margin: .3rem;
+		background: var(--text);
+	}
+
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+main {
+	min-height: 70vh;
+}
+
+
+.section,
+.banner,
+.hero {
+	width: min(92%, var(--max));
+	margin-inline: auto;
+}
+
+
+.section {
+	padding: clamp(2rem, 5vw, 4.5rem) 0;
+}
+
+
+/* =========================
+   BANNER
+========================= */
+
+.banner {
+	margin-top: 2rem;
+	padding: clamp(2.5rem, 7vw, 5rem) clamp(1rem, 4vw, 3rem);
+	text-align: center;
+	background: linear-gradient(135deg, var(--surface), #fff);
+	border-radius: var(--radius);
+	box-shadow: var(--shadow);
+}
+
+
+.eyebrow {
+	color: var(--brand);
+	font-weight: 800;
+	letter-spacing: .12em;
+	text-transform: uppercase;
+	font-size: .82rem;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.card,
+.cta {
+	background: var(--card);
+	border: 1px solid var(--border);
+	border-radius: var(--radius);
+	padding: clamp(1.25rem, 3vw, 2rem);
+	box-shadow: var(--shadow);
+	margin-bottom: 1.25rem;
+}
+
+
+.accent,
+.cta {
+	background: var(--brand);
+	color: #fff;
+}
+
+
+/* =========================
+   GRID LAYOUTS
+========================= */
+
+.card-grid,
+.two-col,
+.form-grid,
+.food-grid {
+	display: grid;
+	gap: 1.25rem;
+}
+
+
+.card-grid {
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+
+.two-col,
+.form-grid {
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+
+.food-grid {
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	margin: 1rem 0 2rem;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+	min-height: 72vh;
+	margin-top: 2rem;
+	border-radius: var(--radius);
+	display: grid;
+	place-items: center;
+	text-align: center;
+	color: #fff;
+	background: linear-gradient( rgba(35, 12, 22, .68), rgba(35, 12, 22, .68) ), url("../images/rs5.jpg") center/cover no-repeat;
+	box-shadow: var(--shadow);
+}
+
+
+	.hero > div {
+		width: min(90%, 48rem);
+		padding: 3rem 1rem;
+	}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.buttons {
+	display: flex;
+	gap: .8rem;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 1.5rem;
+}
+
+
+.btn,
+button {
+	display: inline-block;
+	padding: .8rem 1.2rem;
+	border-radius: .55rem;
+	border: 2px solid var(--accent);
+	background: var(--accent);
+	color: #fff;
+	font-weight: 800;
+	text-decoration: none;
+	cursor: pointer;
+	transition: .2s;
+}
+
+
+	.btn:hover,
+	button:hover {
+		transform: translateY(-2px);
+		background: #b38c20;
+	}
+
+
+.secondary {
+	background: transparent;
+	border-color: #fff;
+}
+
+
+	.secondary:hover {
+		background: #fff;
+		color: var(--brand);
+	}
+
+
+.text-link {
+	font-weight: 800;
+	color: #fff;
+}
+
+
+/* =========================
+   IMAGE CARDS
+========================= */
+
+.image-card {
+	background: #fff;
+	border-radius: var(--radius);
+	overflow: hidden;
+	box-shadow: var(--shadow);
+}
+
+
+	.image-card img,
+	.gallery-grid img {
+		width: 100%;
+		aspect-ratio: 4/3;
+		object-fit: cover;
+		transition: transform .3s;
+	}
+
+
+	.image-card:hover img,
+	.gallery-grid figure:hover img {
+		transform: scale(1.04);
+	}
+
+
+	.image-card h3,
+	.gallery-grid figcaption {
+		padding: .75rem 1rem;
+		background: #fff;
+	}
+
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery-grid {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 1rem;
+}
+
+
+	.gallery-grid figure {
+		overflow: hidden;
+		border-radius: var(--radius);
+		background: #fff;
+		box-shadow: var(--shadow);
+	}
+
+
+/* =========================
+   FORMS
+========================= */
+
+label {
+	display: block;
+	margin: .8rem 0 .35rem;
+	font-weight: 700;
+}
+
+
+input,
+select,
+textarea {
+	width: 100%;
+	padding: .8rem .9rem;
+	border: 1px solid #cfc4b7;
+	border-radius: .55rem;
+	background: #fff;
+}
+
+
+.form-card {
+	max-width: 64rem;
+	margin-inline: auto;
+}
+
+
+/* =========================
+   FOOD ITEMS
+========================= */
+
+.food-item {
+	display: grid;
+	grid-template-columns: 8rem 1fr;
+	gap: 1rem;
+	align-items: center;
+	background: #fffaf0;
+	border: 1px solid var(--border);
+	border-radius: .8rem;
+	padding: 1rem;
+}
+
+
+	.food-item img {
+		width: 100%;
+		aspect-ratio: 1/1;
+		object-fit: cover;
+		border-radius: .65rem;
+	}
+
+
+/* =========================
+   MAP
+========================= */
+
+.map {
+	width: 100%;
+	height: 18rem;
+	border: 0;
+	border-radius: .75rem;
+	margin-top: 1rem;
+}
+
+
+/* =========================
+   FOCUS STATES
+========================= */
+
+button:focus-visible,
+.btn:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+a:focus-visible {
+	outline: .2rem solid #2f80ed;
+	outline-offset: .15rem;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+	margin-top: 3rem;
+	padding: 2.5rem clamp(1rem, 4vw, 3rem) 1.25rem;
+	background: var(--brand-dark);
+	color: #fff;
+}
+
+
+.footer-container {
+	width: min(100%, var(--max));
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 2rem;
+}
+
+
+	.footer-container a {
+		display: block;
+		text-decoration: none;
+	}
+
+
+		.footer-container a:hover {
+			color: var(--accent);
+		}
+
+
+.copyright {
+	text-align: center;
+	margin-top: 2rem;
+	padding-top: 1rem;
+	border-top: 1px solid rgba(255, 255, 255, .2);
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 56.25rem) {
+
+	.card-grid,
+	.gallery-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+
+	.food-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 43.75rem) {
+
+	.site-nav {
+		flex-wrap: wrap;
+	}
+
+
+	.menu-toggle {
+		display: block;
+	}
+
+
+	.nav-links {
+		display: none;
+		width: 100%;
+		flex-direction: column;
+	}
+
+
+		.nav-links.showing {
+			display: flex;
+		}
+
+
+		.nav-links a {
+			text-align: center;
+		}
+
+
+	.card-grid,
+	.gallery-grid,
+	.two-col,
+	.form-grid,
+	.footer-container {
+		grid-template-columns: 1fr;
+	}
+
+
+	.food-item {
+		grid-template-columns: 1fr;
+		text-align: center;
+	}
+
+
+	.hero {
+		min-height: 60vh;
+	}
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 30rem) {
+
+	.section,
+	.banner,
+	.hero {
+		width: 94%;
+	}
+
+
+	.btn,
+	button {
+		width: 100%;
+		text-align: center;
+	}
+
+
+	.buttons {
+		flex-direction: column;
+	}
+}

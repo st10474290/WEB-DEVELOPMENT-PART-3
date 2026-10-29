@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Trecia's Grill | Enquiries & Locations</title>
+    <meta name="description" content="Contact Trecia's Grill for general enquiries, bookings and feedback. Find our Pretoria and Johannesburg service areas.">
+    <meta name="keywords" content="contact Trecia's Grill, restaurant enquiries, Pretoria catering, Johannesburg service area">
+
+    <link rel="stylesheet"
+          href="CSS/style.css">
+
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Trecia's Grill">
+    <meta property="og:title" content="Contact Trecia's Grill | Enquiries & Locations">
+    <meta property="og:description" content="Contact Trecia's Grill for general enquiries, bookings and feedback. Find our Pretoria and Johannesburg service areas.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#8b241f">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+</head>
+
+
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+
+    <!-- NAVIGATION-->
+
+    <nav class="site-nav">
+
+        <a class="logo"
+           href="homepage.html">
+
+            <img src="images/big.png"
+                 alt="Trecia's Grill logo">
+
+        </a>
+
+
+        <button class="menu-toggle"
+                type="button"
+                aria-label="Toggle navigation"
+                aria-expanded="false">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="homepage.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="aboutus.html">
+                    About Us
+                </a>
+            </li>
+
+            <li>
+                <a href="services.html">
+                    Services
+                </a>
+            </li>
+
+            <li>
+                <a href="gallery.html">
+                    Dishes
+                </a>
+            </li>
+
+            <li>
+                <a href="contactus.html"
+                   class="active">
+                    Contact
+                </a>
+            </li>
+
+            <li>
+                <a href="enquiry.html">
+                    Order
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+
+    <!-- MAIN CONTENT-->
+
+    <main id="main-content">
+
+
+        <!-- CONTACT BANNER-->
+
+        <section class="banner">
+
+            <p class="eyebrow">
+                Talk to Us
+            </p>
+
+            <h1>
+                Contact Us
+            </h1>
+
+            <p>
+                General enquiries and booking questions.
+            </p>
+
+        </section>
+
+
+
+        <!-- LOCATIONS -->
+
+        <section class="section two-col">
+
+
+            <!-- PRETORIA -->
+
+            <article class="card">
+
+                <h2>
+                    Pretoria
+                </h2>
+
+                <p>
+                    <strong>Phone:</strong>
+                    +27 82 123 4567
+                </p>
+
+                <p>
+                    <strong>Email:</strong>
+                    info@trecias.co.za
+                </p>
+
+
+                <iframe class="map"
+                        title="Pretoria location"
+                        src="https://www.google.com/maps?q=Pretoria,Gauteng&output=embed"
+                        loading="lazy">
+                </iframe>
+
+            </article>
+
+
+
+            <!-- JOHANNESBURG -->
+
+            <article class="card">
+
+                <h2>
+                    Johannesburg Service Area
+                </h2>
+
+                <p>
+                    Johannesburg, Gauteng — approximate service area only. Please contact us to confirm availability and the correct address before travelling.
+                </p>
+
+
+                <iframe class="map"
+                        title="Johannesburg service area"
+                        src="https://www.google.com/maps?q=Johannesburg,Gauteng&output=embed"
+                        loading="lazy">
+                </iframe>
+
+            </article>
+
+
+        </section>
+
+
+
+        <section class="section">
+            <article class="card">
+                <h2>Interactive Service-Area Map</h2>
+                <p>Markers show approximate city-centre service areas only, not a verified restaurant street address. Use the contact details above to confirm the exact location before travelling.</p>
+                <div id="service-area-map" class="leaflet-map" role="application" aria-label="Interactive map showing approximate Pretoria and Johannesburg service areas"></div>
+                <p class="map-fallback"><a href="https://www.openstreetmap.org/#map=6/-26.0/28.0" target="_blank" rel="noopener noreferrer">Open the service-area map in OpenStreetMap</a></p>
+            </article>
+        </section>
+
+        <!-- CONTACT FORM -->
+
+        <section class="section">
+
+            <article class="card form-card">
+
+                <h2>
+                    Send a General Message
+                </h2>
+
+
+                <form id="contact-form" action="https://formsubmit.co/ajax/info@trecias.co.za" method="post">
+                    <input type="hidden" name="_subject" value="Trecia's Grill website contact message">
+                    <input type="text" name="_honey" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+
+                    <!-- FORM GRID -->
+
+                    <div class="form-grid">
+
+
+                        <!-- FULL NAME -->
+
+                        <div>
+
+                            <label for="cname">
+                                Full Name
+                            </label>
+
+                            <input id="cname"
+                                   name="name"
+                                   required
+                                   minlength="2">
+
+                        </div>
+
+
+
+                        <!-- EMAIL -->
+
+                        <div>
+
+                            <label for="cemail">
+                                Email
+                            </label>
+
+                            <input id="cemail"
+                                   name="email"
+                                   type="email"
+                                   required>
+
+                        </div>
+
+
+
+                        <!-- PHONE -->
+
+                        <div>
+
+                            <label for="cphone">
+                                Phone
+                            </label>
+
+                            <input id="cphone"
+                                   name="phone"
+                                   type="tel"
+                                   pattern="[0-9+() -]{10,20}" title="Enter a valid phone number using 10 to 20 digits or phone symbols.">
+
+                        </div>
+
+
+
+                        <!-- MESSAGE TYPE -->
+
+                        <div>
+
+                            <label for="ctype">
+                                Message Type
+                            </label>
+
+                            <select id="ctype"
+                                    name="type"
+                                    required>
+
+                                <option value="">
+                                    Select
+                                </option>
+
+                                <option>
+                                    General Enquiry
+                                </option>
+
+                                <option>
+                                    Booking Question
+                                </option>
+
+                                <option>
+                                    Feedback
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- MESSAGE -->
+
+                    <label for="cmsg">
+                        Message
+                    </label>
+
+                    <textarea id="cmsg"
+                              name="message"
+                              rows="6"
+                              minlength="10"
+                              maxlength="2000"
+                              required></textarea>
+
+
+
+                    <!-- SUBMIT BUTTON -->
+
+                    <button type="submit" class="submit-button">
+                        Send Message
+                    </button>
+                    <p class="form-status" id="contact-status" role="status" aria-live="polite">Your message will be validated before submission.</p>
+
+
+                </form>
+
+            </article>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+
+    
+    <section class="share-section" aria-label="Share Trecia's Grill">
+      <p>Know someone who would enjoy our menu?</p>
+      <div class="social-links">
+
+            <!-- Facebook -->
+        ////////////////////////////////////////////////////////////////////////-----------------------////////////////////////    <a href="https://www.facebook.com/YourPage" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+            </a>
+
+            <!-- X (Twitter) -->
+            <a href="https://x.com/RanganiRNR?t=ayu9RnvL8N2Vy5HoBfgoDQ&s=09" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968830.png" alt="X (Twitter)">
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/rangani_rr?igsh=MXIzbWZ3aWltNGcydg==" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+            </a>
+
+            <!-- Email -->
+            <a href="mailto:brampamba@email.com">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+            </a>
+            <!-- WhatsApp -->
+            <a href="https://wa.me/0681854594" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+            </a>////////////////////////////////////////////////////////////////////////////////////////////////////////
+        </div>
+    </section>
+
+<footer>
+
+        <div class="footer-container">
+
+
+            <!-- QUICK LINKS -->
+
+            <section>
+
+                <h4>
+                    Quick Links
+                </h4>
+
+                <a href="homepage.html">
+                    Home
+                </a>
+
+                <a href="aboutus.html">
+                    About Us
+                </a>
+
+                <a href="services.html">
+                    Services
+                </a>
+
+            </section>
+
+
+
+            <!-- CONTACT -->
+
+            <section>
+
+                <h4>
+                    Contact
+                </h4>
+
+                <p>
+                    Phone: +27 82 123 4567
+                </p>
+
+                <p>
+                    Email: bookings@trecias.co.za
+                </p>
+
+            </section>
+
+
+
+            <!-- BUSINESS INFORMATION -->
+
+            <section>
+
+                <h4>
+                    Trecia's Grill
+                </h4>
+
+                <p>
+                    Pretoria, South Africa
+                </p>
+
+                <p>
+                    Fresh food and warm
+                    African hospitality.
+                </p>
+
+            </section>
+
+
+        </div>
+
+
+
+        <!-- COPYRIGHT -->
+
+        <p class="copyright">
+
+            &copy; 2026 Trecia's Grill.
+
+        </p>
+
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="js/menu.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TRECIA’S GRILL  — Gallery</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="images/big.png" alt="Logo">
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul>
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html" class="active">Dishes</a></li>
+      <li><a href="contactus.html">Contact</a></li>
+      <li><a href="enquiry.html">Order</a></li>
+    </ul>
+  </nav>
+
+  <div class="content-box large-box">
+    <h1>DIshes</h1>
+    <p>TRECIA’S GRILL • Pretoria, South Africa</p>
+  </div>
+
+  <div class="content-box">
+    <h2>Our Dishes</h2>
+    <p>Browse through our collection of Dishes, eacch dish was created with love and dedication by our lovly chiefs and refacts us as an resturent</p>
+  </div>
+
+  <div class="gallery-grid">
+      <img src="images/rs5.jpg" alt="food">
+      <img src="images/rs7.jpg" alt="food">
+      <img src="images/rs8.jpg" alt="food">
+      <img src="images/rs4.jpeg" alt="food">
+     
+      <img src="images/rs1.jpg" alt="food">
+      <img src="images/rs10.jpg" alt="food">
+      <img src="images/rs1.jpg" alt="food">
+      <img src="images/rs12.jpg" alt="food">
+      <img src="images/rs13.jpg" alt="food">
+      <img src="images/rs14.jpg" alt="food">
+      <img src="images/rs11.jpeg" alt="food">
+  </div>
+
+  <div class="content-box large-box cta-box">
+    <span>Planning an event?</span>
+    <a href="enquiry.html">Book a tasting</a>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <a href="homepage.html">Home</a><br/>
+        <a href="aboutus.html">About Us</a><br/>
+        <a href="services.html">Services</a>
+      </div>
+      <div class="footer-section">
+        <h4>Contact Info</h4>
+        <p>WhatsApp: +27 00 000 0000</p>
+        <p>Email: bookings@TRECIA’S GRILL .co.za</p>
+      </div>
+      <div class="footer-section">
+        <h4>Founder</h4>
+        <p>Chef Trecia</p>
+        <p>Pretoria, South Africa</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector("nav ul").classList.toggle("showing");
+    }
+  </script>
+</body>
+</html>

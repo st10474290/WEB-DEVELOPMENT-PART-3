@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TRECIA’S GRILL — Home</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="images/big.png" alt="Logo">
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <ul>
+      <li><a href="homepage.html" class="active">Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="gallery.html">dishess</a></li>
+      <li><a href="contactus.html">Contact</a></li>
+      <li><a href="enquiry.html">order</a></li>
+    </ul>
+  </nav>
+
+  <div class="content-box large-box">
+      <h1>TRECIA’S GRILL </h1>
+    <p><strong>HOME MADE, WE PUT THE FOOD IN GOOD FOOD.</strong></p>
+    <p>Weddings • Corporate • Family dinning • occations</p>
+    <div>
+      <a href="enquiry.html" class="btn">Start ur oder</a>
+      <a href="gallery.html" class="btn">View Dishes</a>
+    </div>
+  </div>
+
+  <div class="home-grid">
+    <div class="box">
+      <img src="images/rs1.jpg" alt="gogo special 1">
+      <div class="overlay">gogo special</div>
+    </div>
+    <div class="box">
+      <img src="images/rs2.jpg" alt="colored flavours 2">
+      <div class="overlay">colored flavours</div>
+    </div>
+    <div class="box">
+      <img src="images/rs3.jpg" alt="Moms cooking 3">
+      <div class="overlay">Moms cookings</div>
+    </div>
+  </div>
+
+  <div class="content-box large-box cta-box">
+    <span>Planning an event or what a nice meal?</span>
+      <p>Want cook food, African food, home cooked style food come to Trecias Grill where we put the food in good food</p>
+    <a href="enquiry.html">Start ur order</a>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <a href="homepage.html">Home</a><br/>
+        <a href="aboutus.html">About Us</a><br/>
+        <a href="services.html">Services</a>
+      </div>
+      <div class="footer-section">
+        <h4>Contact Info</h4>
+        <p>WhatsApp: +27 00 000 0000</p>
+        <p>Email: bookings@trecias.co.za</p>
+      </div>
+      <div class="footer-section">
+        <h4>Founder</h4>
+        <p>Qana Letholo</p>
+        <p>Pretoria, South Africa</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector("nav ul").classList.toggle("showing");
+    }
+  </script>
+</body>
+</html>
